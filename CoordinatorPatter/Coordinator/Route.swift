@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  Route.swift
 //  CoordinatorPatter
 //
 //  Created by Daniel Prundianu on 21.11.18.
@@ -10,7 +10,7 @@ import UIKit
 
 protocol Router: Presentable {
 	func present(_ any: Presentable?)
-	func setRootModule(_ any: Presentable?)
+	func setRoot(_ any: Presentable?)
 }
 
 final class Route: NSObject, Router {
@@ -28,7 +28,7 @@ final class Route: NSObject, Router {
 		rootController?.present(vc, animated: true, completion: nil)
 	}
 
-	func setRootModule(_ any: Presentable?) {
+	func setRoot(_ any: Presentable?) {
 		guard let vc = any?.toPresent() else {
 			fatalError()
 		}

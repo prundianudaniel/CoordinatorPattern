@@ -16,6 +16,6 @@ class MainCoordinator: Coordinator {
 	}
 
 	func start() {
-		self.route.setRootModule(MainViewController().toPresent())
+		self.route.setRoot(MainViewController().toPresent())
 	}
 }

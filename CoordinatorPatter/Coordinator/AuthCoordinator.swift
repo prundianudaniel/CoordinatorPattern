@@ -23,6 +23,6 @@ class AuthCoordinator: Coordinator {
 		vc.onSuccess = {
 			self.userLoggedIn?()
 		}
-		route.setRootModule(vc)
+		route.setRoot(vc)
 	}
 }

@@ -15,7 +15,7 @@
 		F70A048B21A4E2F900D9A2C3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048A21A4E2F900D9A2C3 /* AppCoordinator.swift */; };
 		F70A048D21A4E31800D9A2C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048C21A4E31800D9A2C3 /* Coordinator.swift */; };
 		F70A048F21A4E37A00D9A2C3 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048E21A4E37A00D9A2C3 /* Presentable.swift */; };
-		F70A049121A4E39F00D9A2C3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A049021A4E39F00D9A2C3 /* Router.swift */; };
+		F70A049121A4E39F00D9A2C3 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A049021A4E39F00D9A2C3 /* Route.swift */; };
 		F70A049321A4E72900D9A2C3 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A049221A4E72900D9A2C3 /* AuthCoordinator.swift */; };
 		F70A049521A4E9D300D9A2C3 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A049421A4E9D300D9A2C3 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		F70A048A21A4E2F900D9A2C3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F70A048C21A4E31800D9A2C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F70A048E21A4E37A00D9A2C3 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
-		F70A049021A4E39F00D9A2C3 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F70A049021A4E39F00D9A2C3 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		F70A049221A4E72900D9A2C3 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		F70A049421A4E9D300D9A2C3 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,7 +83,7 @@
 				F70A048A21A4E2F900D9A2C3 /* AppCoordinator.swift */,
 				F70A048C21A4E31800D9A2C3 /* Coordinator.swift */,
 				F70A048E21A4E37A00D9A2C3 /* Presentable.swift */,
-				F70A049021A4E39F00D9A2C3 /* Router.swift */,
+				F70A049021A4E39F00D9A2C3 /* Route.swift */,
 				F70A049221A4E72900D9A2C3 /* AuthCoordinator.swift */,
 				F70A049421A4E9D300D9A2C3 /* MainCoordinator.swift */,
 			);
@@ -164,7 +164,7 @@
 				F70A048321A4CC6B00D9A2C3 /* LoginViewController.swift in Sources */,
 				F70A049321A4E72900D9A2C3 /* AuthCoordinator.swift in Sources */,
 				F70A048D21A4E31800D9A2C3 /* Coordinator.swift in Sources */,
-				F70A049121A4E39F00D9A2C3 /* Router.swift in Sources */,
+				F70A049121A4E39F00D9A2C3 /* Route.swift in Sources */,
 				F70A046421A45E2000D9A2C3 /* AppDelegate.swift in Sources */,
 				F70A048721A4CC9100D9A2C3 /* MainViewController.swift in Sources */,
 				F70A049521A4E9D300D9A2C3 /* MainCoordinator.swift in Sources */,

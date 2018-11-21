@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		self.applicationCoordinator.start()
 		window?.makeKeyAndVisible()
+
 		return true
 	}
 
@@ -37,6 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		guard let dict = userInfo as? [String: Any],
 			let remoteURL = dict["url"] as? String,
 			let url = URL(string: remoteURL) else { return }
+
+			/// TODO: UNCOMMENT! TALK ABOUT THIS.
+			//self.applicationCoordinator.deepLink(url)
 	}
 
 	private func makeCoordinator() -> Coordinator {
