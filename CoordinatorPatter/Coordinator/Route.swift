@@ -33,7 +33,7 @@ final class Route: NSObject, Router {
 			fatalError()
 		}
 		rootController?.setViewControllers([vc], animated: false)
-		rootController?.isNavigationBarHidden = true
+		rootController?.isNavigationBarHidden = false
 	}
 
 	func toPresent() -> UIViewController? {
