@@ -12,6 +12,11 @@
 		F70A046921A45E2000D9A2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70A046721A45E2000D9A2C3 /* Main.storyboard */; };
 		F70A046B21A45E2500D9A2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F70A046A21A45E2500D9A2C3 /* Assets.xcassets */; };
 		F70A046E21A45E2500D9A2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F70A046C21A45E2500D9A2C3 /* LaunchScreen.storyboard */; };
+		F70A047821A4C4B000D9A2C3 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A047721A4C4B000D9A2C3 /* ApplicationCoordinator.swift */; };
+		F70A047F21A4CB5C00D9A2C3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A047E21A4CB5C00D9A2C3 /* Coordinator.swift */; };
+		F70A048321A4CC6B00D9A2C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048221A4CC6B00D9A2C3 /* LoginViewController.swift */; };
+		F70A048521A4CC8000D9A2C3 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048421A4CC8000D9A2C3 /* TutorialViewController.swift */; };
+		F70A048721A4CC9100D9A2C3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70A048621A4CC9100D9A2C3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F70A046A21A45E2500D9A2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F70A046D21A45E2500D9A2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F70A046F21A45E2500D9A2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F70A047721A4C4B000D9A2C3 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		F70A047E21A4CB5C00D9A2C3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F70A048221A4CC6B00D9A2C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F70A048421A4CC8000D9A2C3 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		F70A048621A4CC9100D9A2C3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		F70A046221A45E1F00D9A2C3 /* CoordinatorPatter */ = {
 			isa = PBXGroup;
 			children = (
+				F70A047B21A4C8A500D9A2C3 /* Coordinator */,
 				F70A046321A45E2000D9A2C3 /* AppDelegate.swift */,
 				F70A046521A45E2000D9A2C3 /* ViewController.swift */,
 				F70A046721A45E2000D9A2C3 /* Main.storyboard */,
 				F70A046A21A45E2500D9A2C3 /* Assets.xcassets */,
 				F70A046C21A45E2500D9A2C3 /* LaunchScreen.storyboard */,
 				F70A046F21A45E2500D9A2C3 /* Info.plist */,
+				F70A048221A4CC6B00D9A2C3 /* LoginViewController.swift */,
+				F70A048421A4CC8000D9A2C3 /* TutorialViewController.swift */,
+				F70A048621A4CC9100D9A2C3 /* MainViewController.swift */,
 			);
 			path = CoordinatorPatter;
+			sourceTree = "<group>";
+		};
+		F70A047B21A4C8A500D9A2C3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F70A047721A4C4B000D9A2C3 /* ApplicationCoordinator.swift */,
+				F70A047E21A4CB5C00D9A2C3 /* Coordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F70A048321A4CC6B00D9A2C3 /* LoginViewController.swift in Sources */,
 				F70A046621A45E2000D9A2C3 /* ViewController.swift in Sources */,
+				F70A048521A4CC8000D9A2C3 /* TutorialViewController.swift in Sources */,
 				F70A046421A45E2000D9A2C3 /* AppDelegate.swift in Sources */,
+				F70A047F21A4CB5C00D9A2C3 /* Coordinator.swift in Sources */,
+				F70A048721A4CC9100D9A2C3 /* MainViewController.swift in Sources */,
+				F70A047821A4C4B000D9A2C3 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
