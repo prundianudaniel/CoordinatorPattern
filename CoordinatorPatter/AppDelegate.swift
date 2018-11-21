@@ -15,13 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	private var rootController: UINavigationController {
 		self.window = UIWindow(frame: UIScreen.main.bounds)
-		let nc = UINavigationController(rootViewController: MainViewController())
+		let nc = UINavigationController()
 		self.window!.rootViewController = nc
 		return self.window!.rootViewController as! UINavigationController
 	}
 
 	private lazy var applicationCoordinator: Coordinator = self.makeCoordinator()
-
 
 	func application(_ application: UIApplication,
 					 didFinishLaunchingWithOptions
@@ -38,11 +37,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		guard let dict = userInfo as? [String: Any],
 			let remoteURL = dict["url"] as? String,
 			let url = URL(string: remoteURL) else { return }
-		self.applicationCoordinator.start(with: url)
 	}
 
 	private func makeCoordinator() -> Coordinator {
-		return ApplicationCoordinator(navigationController: self.rootController)
+		return AppCoordinator(route: Route(rootController: self.rootController))
 	}
 }
 

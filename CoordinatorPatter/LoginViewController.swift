@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, Presentable {
+class LoginViewController: UIViewController {
+
+	var onSuccess: (() -> Void)?
 
 	private let button: UIButton = {
 		let button = UIButton()
@@ -18,8 +20,8 @@ class LoginViewController: UIViewController, Presentable {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		self.view.backgroundColor = UIColor.green
 
+		self.view.backgroundColor = UIColor.brown
 		self.view.addSubview(self.button)
 		self.button.translatesAutoresizingMaskIntoConstraints = false
 		self.button.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
@@ -28,18 +30,6 @@ class LoginViewController: UIViewController, Presentable {
 	}
 
 	@objc func buttonPressed() {
-
-	}
-
-	// MARK: - Presentable
-
-	static func pushOn(_ nc: UINavigationController) {
-		let vc = LoginViewController()
-		nc.pushViewController(vc, animated: true)
-	}
-
-	static func present(_ nc: UINavigationController) {
-		let vc = LoginViewController()
-		nc.present(vc, animated: true, completion: nil)
+		onSuccess?()
 	}
 }

@@ -8,14 +8,9 @@
 
 import UIKit
 
-class MainViewController: UIViewController, Presentable {
+class MainViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.view.backgroundColor = UIColor.red
-	}
-
-	static func pushOn(_ nc: UINavigationController) {
-		let vc = MainViewController()
-		nc.pushViewController(vc, animated: true)
 	}
 }

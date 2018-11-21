@@ -6,10 +6,8 @@
 //  Copyright © 2018 InPose GmbH. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 protocol Coordinator: class {
-	var navigationController: UINavigationController { get set }
 	func start()
-	func start(with: URL)
 }
